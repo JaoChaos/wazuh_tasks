@@ -30,24 +30,24 @@ For this, we should follow the instructions they give us, and as I use Ubuntu, I
 
 To install the packages necesaries to use the software.
 ```
-# apt-get update
-# apt-get install curl apt-transport-https lsb-release
+$ apt-get update
+$ apt-get install curl apt-transport-https lsb-release
 ```
 
 This to create a new python file.
 ```
-# if [ ! -f /usr/bin/python ]; then ln -s /usr/bin/python3 /usr/bin/python; fi
+$ if [ ! -f /usr/bin/python ]; then ln -s /usr/bin/python3 /usr/bin/python; fi
 ```
 
 This to add the GPG key.
 ```
-# curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | apt-key add -
+$ curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | apt-key add -
 ```
 
 And finally, this to add the repository and actuallize everything.
 ```
-# echo "deb https://packages.wazuh.com/3.x/apt/ stable main" | tee -a /etc/apt/sources.list.d/wazuh.list
-# apt-get update
+$ echo "deb https://packages.wazuh.com/3.x/apt/ stable main" | tee -a /etc/apt/sources.list.d/wazuh.list
+$ apt-get update
 ```
 ![imagen1](https://github.com/JaoChaos/wazuh_tasks/blob/master/img/1.png)
 ![imagen2](https://github.com/JaoChaos/wazuh_tasks/blob/master/img/2.png)
@@ -56,20 +56,20 @@ After adding the repository, we install the manager:
 
 It's super-easy, just use:
 ```
-# apt-get install wazuh-manager
+$ apt-get install wazuh-manager
 ```
 
 And then, use this order to check the service status:
 ```
-# systemctl status wazuh-manager
+$ systemctl status wazuh-manager
 ```
 
-![imagen3][/3.png]
-![imagen4][/4.png]
+![imagen3][https://github.com/JaoChaos/wazuh_tasks/blob/master/img/3.png]
+![imagen4][https://github.com/JaoChaos/wazuh_tasks/blob/master/img/4.png]
 
 Now,, to install the agent, as we have configured the repository installation, we only need to do:
 ```
-# apt-get install wazuh-agent
+$ apt-get install wazuh-agent
 ```
 
 ### 1.2 Verify the agent works properly.
@@ -82,7 +82,7 @@ Now, first thing is to register the agent:
 Once installed the agent, in the manager we create the agent we will use:
 
 ```
-#  /var/ossec/bin/manage_agents
+$  /var/ossec/bin/manage_agents
 ```
 
 Using this order, we create an agent with a name, an ID and an IP.
@@ -101,20 +101,22 @@ This is the result:
 
 ### 2.2 Generate the documentation using "Make":
 
-After I cloned the repository in my PC, I used the order ``` # make ```, but I needed to install the requirements, so I did it:
+After I cloned the repository in my PC, I used the order ``` $ make ```, but I needed to install the requirements, so I did it:
 
 ```
-# sudo pip install -r requirements.txt
+$ sudo pip install -r requirements.txt
 ```
 
-After that, I was able to use the order ``` # make (arg)``` as I wanted, so to give it a try, i used ``` # make html```to make a documentation in that format, and also i used ``` # make json``` to see if it worked as it should.
-![imagen]
-![imagen]
+After that, I was able to use the order ``` $ make (arg)``` as I wanted, so to give it a try, i used ``` # make html```to make a documentation in that format, and also i used ``` $ make json``` to see if it worked as it should.
+
+![imagen](https://github.com/JaoChaos/wazuh_tasks/blob/master/img/5.png)
+![imagen](https://github.com/JaoChaos/wazuh_tasks/blob/master/img/6.png)
 
 ### 2.3 Create a branch in my fork and add something new on it:
 
 To create a new branch in my forked repository, first of all I make a pull to update the files.
 Now, I create the branch using ``` $ git checkout -b branch_1 ```
+
 In the branch, I have changed the Makefile and added a new line, and I created a new folder to host static images that can be placed into the documentation.
 
 ### 2.4  Create a second branch fixing something.
@@ -126,6 +128,7 @@ For this purpose, i've changed a few more lines of the Makefile to leave a clear
 For doing this, we just use the line command:
 
 ``` $ git push origin branch_1 ```
+
 ``` $ git push origin branch_2 ```
 
 ![imagen](https://github.com/JaoChaos/wazuh_tasks/blob/master/img/7.png)
@@ -135,12 +138,14 @@ For doing this, we just use the line command:
 After pushing my local folder to the master branch, I check if everything has worked.
 We can't see the img folder as it is empty, but it is there.
 
-![img]
-![img]
+![img](https://github.com/JaoChaos/wazuh_tasks/blob/master/img/8.png)
+![img](https://github.com/JaoChaos/wazuh_tasks/blob/master/img/9.png)
+![img](https://github.com/JaoChaos/wazuh_tasks/blob/master/img/10.png)
 
-### 3. Conclusions.
+## 3. Conclusions.
 
 I have enjoyed really much doing this tasks, and I appreciate a lot to Wazuh for giving me the oportunity to know more about them.
 
 Hope you like the work.
+
 Juan Anaya Ortiz.
