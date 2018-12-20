@@ -2,19 +2,19 @@
 # Juan Anaya Ortiz.
 
 ## Index:
-  1.**Common Tasks**
-    1.Deploy manager and agent
-    2.Verify agent works properly
-    3.Verify manager generates alerts
-    4.Comment the problems found during the work
-  2.**Specific tasks**
-    1.Fork documentation repository
-    2.Generate docs and comment about dependencies
-    3.Create a branch in my fork and add something new on it
-    4.Create a second branch fixing or adding something
-    5.Create 2 pull requests with the last 2 branches
-    6.Accept the P.R. and see if everything has worked
-  3.**Conclusions**
+  1. **Common Tasks**
+    1. Deploy manager and agent
+    2. Verify agent works properly
+    3. Verify manager generates alerts
+    4. Comment the problems found during the work
+  2. **Specific tasks**
+    1. Fork documentation repository
+    2. Generate docs and comment about dependencies
+    3. Create a branch in my fork and add something new on it
+    4. Create a second branch fixing or adding something
+    5. Create 2 pull requests with the last 2 branches
+    6. Accept the P.R. and see if everything has worked
+  3. **Conclusions**
 
 ## 1. Common tasks:
 
@@ -124,10 +124,11 @@ For this purpose, i've changed a few more lines of the Makefile to leave a clear
 ### 2.5 Pull request the 2 branches into my forked repository:
 
 For doing this, we just use the line command:
-``` $ git push origin branch_1```
-``` $ git push origin branch_2```
 
-![imagen]
+``` $ git push origin branch_1 ```
+``` $ git push origin branch_2 ```
+
+![imagen](https://github.com/JaoChaos/wazuh_tasks/blob/master/img/7.png)
 
 ### 2.6 Accept the P.R. and see if everything has worked.
 
