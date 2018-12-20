@@ -2,19 +2,19 @@
 # Juan Anaya Ortiz.
 
 ## Index:
-  1. **Common Tasks**
-    1. Deploy manager and agent
-    1. Verify agent works properly
-    1. Verify manager generates alerts
-    1. Comment the problems found during the work
-  2. **Specific tasks**
-    1. Fork documentation repository
-    2. Generate docs and comment about dependencies
-    3. Create a branch in my fork and add something new on it
-    4. Create a second branch fixing or adding something
-    5. Create 2 pull requests with the last 2 branches
-    6. Accept the P.R. and see if everything has worked
-  3. **Conclusions**
+  1.**Common Tasks**
+    1.Deploy manager and agent
+    2.Verify agent works properly
+    3.Verify manager generates alerts
+    4.Comment the problems found during the work
+  2.**Specific tasks**
+    1.Fork documentation repository
+    2.Generate docs and comment about dependencies
+    3.Create a branch in my fork and add something new on it
+    4.Create a second branch fixing or adding something
+    5.Create 2 pull requests with the last 2 branches
+    6.Accept the P.R. and see if everything has worked
+  3.**Conclusions**
 
 ## 1. Common tasks:
 
