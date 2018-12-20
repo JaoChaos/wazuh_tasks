@@ -50,8 +50,8 @@ And finally, this to add the repository and actuallize everything.
 # echo "deb https://packages.wazuh.com/3.x/apt/ stable main" | tee -a /etc/apt/sources.list.d/wazuh.list
 # apt-get update
 ```
-![imagen1][/1.png]
-![imagen2][/2.png]
+![imagen1][/img/1.png]
+![imagen2][/img/2.png]
 
 After adding the repository, we install the manager:
 
