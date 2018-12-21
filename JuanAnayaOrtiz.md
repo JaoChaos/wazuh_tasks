@@ -68,7 +68,7 @@ $ systemctl status wazuh-manager
 ![imagen4](https://github.com/JaoChaos/wazuh_tasks/blob/master/img/4.png)
 
 
-Now,, to install the agent, as we have configured the repository installation, we only need to do:
+Now, to install the agent, as we have configured the repository installation, we only need to do:
 
 ```
 $ apt-get install wazuh-agent
@@ -78,7 +78,7 @@ After this, we need to create a new agent in the manager, extraxt its key, and p
 
 ![imagen11](https://github.com/JaoChaos/wazuh_tasks/blob/master/img/11.jpeg)
 
-Then, we go to the ``` ossec.conf ``` filoe and add the manager IP into the client.
+Then, we go to the ``` ossec.conf ``` file and add the manager IP into the client.
 
 To check if both are connected, we run ``` $ netstat -vatunp|grep ossec-agentd ```
 
