@@ -64,8 +64,8 @@ And then, use this order to check the service status:
 $ systemctl status wazuh-manager
 ```
 
-![imagen3][https://github.com/JaoChaos/wazuh_tasks/blob/master/img/3.png]
-![imagen4][https://github.com/JaoChaos/wazuh_tasks/blob/master/img/4.png]
+![imagen3](https://github.com/JaoChaos/wazuh_tasks/blob/master/img/3.png)
+![imagen4](https://github.com/JaoChaos/wazuh_tasks/blob/master/img/4.png)
 
 
 Now,, to install the agent, as we have configured the repository installation, we only need to do:
@@ -76,17 +76,17 @@ $ apt-get install wazuh-agent
 
 After this, we need to create a new agent in the manager, extraxt its key, and paste it in the agent machine.
 
-![imagen11]{https://github.com/JaoChaos/wazuh_tasks/blob/master/img/11.jpeg}
+![imagen11](https://github.com/JaoChaos/wazuh_tasks/blob/master/img/11.jpeg)
 
 Then, we go to the ``` ossec.conf ``` filoe and add the manager IP into the client.
 
 To check if both are connected, we run ``` $ netstat -vatunp|grep ossec-agentd ```
 
-![imagen12][https://github.com/JaoChaos/wazuh_tasks/blob/master/img/12.jpeg]
+![imagen12](https://github.com/JaoChaos/wazuh_tasks/blob/master/img/12.jpeg)
 
 Now, to see if they are really connected and to check if alerts are being sent, we check de alerts.log in the manager.
 
-![imagen13][https://github.com/JaoChaos/wazuh_tasks/blob/master/img/13.png]
+![imagen13](https://github.com/JaoChaos/wazuh_tasks/blob/master/img/13.png)
 
 In this file, we can check many things, like the agent has connected well, the ports have opened to listen the agent, etc.
 
